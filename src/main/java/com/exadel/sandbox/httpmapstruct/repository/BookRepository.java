@@ -4,7 +4,6 @@ import com.exadel.sandbox.httpmapstruct.model.Book;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Repository;
 
@@ -13,7 +12,7 @@ public class BookRepository {
 
     private final Map<String, Book> db = new HashMap<>();
 
-    public String addBook(Book book) {
+    public String create(Book book) {
         String id = book.getId();
         db.put(id, book);
 

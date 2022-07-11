@@ -19,7 +19,7 @@ public class BookService {
     }
 
     public String addBook(Book book) {
-        return repository.addBook(book);
+        return repository.create(book);
     }
 
     public Book get(String id) {
